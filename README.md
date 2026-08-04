@@ -2,12 +2,15 @@
 
 FBI Wanted MCP.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 853+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `search_wanted` | Search the FBI's Wanted persons database — fugitives, Most Wanted, cyber's-most-wanted, terrorists, white-collar suspects, kidnappings/missing persons, and law-enforcement-assistance cases. Returns compact records with reward, warning, and image. Keyless, official FBI data. |
+| `get_wanted` | Get the full FBI Wanted profile for one person by uid — physical description, aliases, occupations, caution/remarks/details (plain text), reward, field offices, and images. Keyless, official FBI data. |
+| `most_wanted` | The FBI's Ten Most Wanted Fugitives. Returns the current top-ten list with reward, warning, and image for each. Keyless, official FBI data. |
 
 ## Quick Start
 
@@ -23,7 +26,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 853+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +50,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
