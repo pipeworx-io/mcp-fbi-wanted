@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-fbi-wanted",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "FBI Wanted MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-628e69f8b85b8315424acd97ee20dd7c107c9448010d4356cfc21a01613edac3",
-    "sourceCommit": "712a5e0171ea24483214329d0cd7efdfd9b80352"
+    "sourceHash": "v1-ce9d1a09ce49c7482f5bb764959b06e457bc4dc3b1cc28cd9e7866667478bf57",
+    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
   }
 }
