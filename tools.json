@@ -1,0 +1,68 @@
+[
+  {
+    "name": "search_wanted",
+    "description": "Search the FBI's Wanted persons database — fugitives, Most Wanted, cyber's-most-wanted, terrorists, white-collar suspects, kidnappings/missing persons, and law-enforcement-assistance cases. Returns compact records with reward, warning, and image. Keyless, official FBI data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text title search (matches the subject name/case title)."
+        },
+        "person_classification": {
+          "type": "string",
+          "description": "Filter by person classification, e.g. \"Main\", \"Victim\", \"Ten Most Wanted\"."
+        },
+        "poster_classification": {
+          "type": "string",
+          "description": "Filter by poster/program category. Common values: \"ten\" (Ten Most Wanted Fugitives), \"cyber\", \"wcc\" (white-collar crime), \"terrorist\", \"kidnap\" (kidnappings/missing persons), \"ecap\" (Endangered Child Alert Program), \"seeking-info\", \"law-enforcement-assistance\"."
+        },
+        "field_office": {
+          "type": "string",
+          "description": "Filter by FBI field office, e.g. \"miami\", \"newyork\", \"losangeles\"."
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number (default 1)."
+        },
+        "page_size": {
+          "type": "number",
+          "description": "Results per page (default 20, max 50)."
+        },
+        "sort_on": {
+          "type": "string",
+          "description": "Field to sort on, e.g. \"modified\" (default) or \"publication\"."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_wanted",
+    "description": "Get the full FBI Wanted profile for one person by uid — physical description, aliases, occupations, caution/remarks/details (plain text), reward, field offices, and images. Keyless, official FBI data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "The wanted-person uid (from search_wanted / most_wanted results)."
+        }
+      },
+      "required": [
+        "uid"
+      ]
+    }
+  },
+  {
+    "name": "most_wanted",
+    "description": "The FBI's Ten Most Wanted Fugitives. Returns the current top-ten list with reward, warning, and image for each. Keyless, official FBI data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "page_size": {
+          "type": "number",
+          "description": "How many to return (default 10, max 20)."
+        }
+      }
+    }
+  }
+]
