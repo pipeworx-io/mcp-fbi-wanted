@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-fbi-wanted",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "FBI Wanted MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -28,6 +28,6 @@
     "slug": "fbi-wanted",
     "gatewaySlug": "fbi-wanted",
     "sourceHash": "v1-3b270a2075388271a707d7dc15ecc704c187153203891e3ed32b2e838dd4f212",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceCommit": "06a6b405041923c5ddf2ac2436e7c049e635f464"
   }
 }
